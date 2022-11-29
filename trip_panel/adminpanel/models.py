@@ -8,7 +8,7 @@ class hotell(models.Model):
     hotellpics    = models.ImageField( null= True, blank=True , upload_to='images/' )
     timestamp     = models.DateTimeField(auto_now_add=True)
     date          = models.DateTimeField(auto_now_add=True)
-    hotellinfo    = models.TextField()
+    hotel_info    = models.TextField()
 
     
 
