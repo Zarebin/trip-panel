@@ -8,6 +8,7 @@ class Hotel(models.Model):
     insert_time     = models.DateTimeField(auto_now_add=True)
     hotel_info    = models.TextField()
     score = models.PositiveSmallIntegerField(max_length=1)
+    hotel_address = models.CharField(max_length=550)
 
     
 
