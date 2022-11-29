@@ -1,0 +1,6 @@
+venv1/
+__pycache__/
+__init.py__
+migrations/
+db.sqlite3
+requirements.txt
