@@ -19,5 +19,6 @@ from adminpanel import urls
 
 urlpatterns = [
     path('', include('adminpanel.urls')),
+    path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
 ]

@@ -1,16 +1,17 @@
 from django.db import models
 
-# Create your models here.
 
-class hotell(models.Model):
-    hotel_name     = models.CharField(max_length=50)
-    hottl_address  = models.CharField(max_length=250)
-    hotel_pics     = models.ImageField( null= True, blank=True , upload_to='images/' )
-    timestamp      = models.DateTimeField(auto_now_add=True)
-    hotel_info     = models.TextField()
+class Hotel(models.Model):
+    hotel_name     = models.CharField(max_length=100)
+    hotel_pictures    = models.ImageField( null= True, blank=True , upload_to='images/' )
+    insert_time     = models.DateTimeField(auto_now_add=True)
+    hotel_info    = models.TextField()
+    score = models.PositiveSmallIntegerField(max_length=1)
+    hotel_address = models.CharField(max_length=550)
 
     
 
-
     def __str__(self) -> str:
-        return self.hotelname
+        return self.hotel_name
+
+
