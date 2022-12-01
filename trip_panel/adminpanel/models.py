@@ -2,7 +2,6 @@ from django.db import models
 
 
 
-
 class Hotel(models.Model):
     hotel_name     = models.CharField(max_length=100)
     hotel_pictures    = models.ImageField( null= True, blank=True , upload_to='images/' )
